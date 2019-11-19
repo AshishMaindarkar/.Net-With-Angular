@@ -1,0 +1,22 @@
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>DOB</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let client of Searchresult">
+                <td>{{client. ClientId}}</td>
+                <td>{{client.Firstname}}</td>
+                <td>{{client.Lastname}}</td>
+                <td>{{client.Dob}}</td>
+                <td *ngFor="let Add of client.Id">{{Add.Address}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

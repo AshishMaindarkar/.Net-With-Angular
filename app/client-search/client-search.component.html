@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="jumbotron">
+        <div class="form-horizontal" >
+            <div class="form-group">
+                <label class="control-label col-md-3" >Search by Name</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" [(ngModel)]="clientObj.Firstname" >                   
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-3">Search by Lastname</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" [(ngModel)]="clientObj.Lastname" >                   
+                </div>
+            </div>
+            <div class=" from-group ml-3 mt-4">
+                <button type="submit" class="btn btn-primary form-control col-md-2 btn-md " (click)="clickSearch()">Submit</button>
+            </div>          
+            
+        </div>
+    </div>
+</div>
+<app-search-result [Searchresult]="Searchresult"></app-search-result>
